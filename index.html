@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://media.aws.alkomprar.com/resources/assets/alkosto/wro/alkosto_home.css?v=2022-04-V5.0.3.6">
+    <link rel="stylesheet" media="all"
+        href="https://media.aws.alkomprar.com/resources/assets/alkosto/wro/alkosto_critical.css?v=2022-04-V5.0.3.6"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" media="all"
+        href="https://media.aws.alkomprar.com/resources/assets/alkosto/wro/alkosto_addons.css?v=2022-04-V5.0.3.6"
+        crossorigin="anonymous" />
+    <link rel="preload"
+        href="https://media.aws.alkomprar.com/resources/assets/alkosto/wro/alkosto_icons.css?v=2022-04-V5.0.3.6"
+        crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" media="all"
+        href="https://media.aws.alkomprar.com/resources/assets/alkosto/wro/alkosto_icons.css?v=2022-04-V5.0.3.6"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ux-alkosto/icons/style.min.css">
+    <title>envio gratis</title>
+</head>
+
+<body>
+    <div class="content">
+        <style>
+            h3 {
+                font-size: 16px !important;
+                margin-bottom: 24px;
+            }
+
+            k-title-underline {
+                flex-basis: 100%;
+                margin-bottom: 28px;
+            }
+
+            ol.breadcrumb.main-wrapper.breadcrumb-alkosto li,
+            ol.breadcrumb.main-wrapper.breadcrumb-alkosto span,
+            .breadcrumb-section .breadcrumb li:nth-last-of-type(1):before {
+                color: white;
+            }
+
+            k-card p {
+                display: block !important;
+            }
+
+            k-grid k-card {
+                margin: 4px;
+            }
+
+            k-grid k-link {
+                --primary-color2: var(--primary-color1);
+            }
+
+            .agendando-card {
+                align-items: flex-start;
+                display: flex;
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+
+            .agendando-card b {
+                color: var(--primary-color2);
+            }
+
+            .agendando-card k-icon {
+                font-size: 32px;
+                --k-icon-color: white;
+                background-color: var(--primary-color1);
+                padding: 12px;
+                width: 56px;
+                margin: 0 12px;
+                height: 56px;
+                display: flex;
+                border-radius: 100%;
+            }
+
+            .bg-banner {
+                background-image: url(./img/banner_envio_gratis_alkosto_desktop.jpg);
+                background-size: cover;
+                height: 400px;
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+
+            .btn-modal {
+                width: max-content;
+                cursor: pointer;
+            }
+
+
+
+            .btn-modal i {
+                padding-left: 8px;
+            }
+
+            .bg-gray {
+                background: #f5f5f5;
+                padding: 36px 0;
+            }
+
+            .bg-gray k-grid {
+                width: 100%;
+                margin-bottom: 0;
+                max-width: 1266px;
+            }
+
+            .border-line {
+                border-radius: 4px;
+                border: 1px solid;
+                font-size: 16px;
+                margin-bottom: 16px;
+                padding: 1em;
+                width: 100%;
+            }
+
+            .border-line p {
+                margin-bottom: 0;
+            }
+
+            .breadcrumb-section {
+                width: 1366px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 40px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                z-index: 1;
+            }
+
+            .breadcrumb-section .breadcrumb a {
+                color: white;
+            }
+
+            .container-flex {
+                align-items: center;
+                display: flex;
+                margin: 0 auto;
+                padding: 0 40px;
+                width: 100%;
+                max-width: 1366px;
+            }
+
+
+
+
+            .esperando {
+                margin: 24px auto;
+            }
+
+            .espera-container {
+                display: grid;
+                flex-basis: 100%;
+                grid-gap: 16px;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .espera-container k-card {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .espera-container k-card:nth-child(2),
+            .espera-container k-card:nth-child(3) {
+                flex-wrap: wrap;
+            }
+
+            .espera-container k-card:nth-child(2) p,
+            .espera-container k-card:nth-child(3) p {
+                text-align: center;
+            }
+
+            .espera-container k-card:nth-child(2) b,
+            .espera-container k-card:nth-child(3) b,
+            .recibiendo b {
+                color: var(--primary-color2);
+            }
+
+            .espera-container k-card:nth-child(2) k-icon,
+            .espera-container k-card:nth-child(3) k-icon {
+                align-items: center;
+                background-color: var(--primary-color2);
+                color: white;
+                font-size: 50px;
+                margin: auto auto 8px;
+                display: flex;
+                width: 80px;
+                border-radius: 100%;
+                height: 80px;
+                justify-content: center;
+            }
+
+            .gif-media {
+                grid-column: span 2;
+                grid-row: span 2;
+                padding: 0px !important;
+            }
+
+            .gif-media img {
+                max-width: 350px;
+                width: 100%;
+            }
+
+            .gif-media li {
+                font-size: 14px;
+                margin-bottom: 16px;
+            }
+
+            .gif-media li::before {
+                content: "\2022";
+                font-size: 32px;
+                display: inline-block;
+                margin-left: -16px;
+                width: 16px;
+                position: relative;
+                top: 6px;
+                color: var(--primary-color1);
+                height: 4px;
+            }
+
+            .gif-media p {
+                color: var(--primary-color2);
+                font-size: 16px;
+            }
+
+            .gif-media ul {
+                padding-left: 1em;
+            }
+
+            .img-video-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .img-video-container img {
+                max-width: 460px;
+                width: 100%;
+            }
+
+            .img-video-container a {
+                text-align: center;
+                background-color: white;
+                padding: 16px 12px;
+                position: relative;
+                left: 11%;
+                line-height: 16px;
+                font-size: 16px;
+                font-weight: bold;
+                color: var(--primary-color1);
+                border: 1px solid var(--primary-color1);
+                border-radius: 8px;
+            }
+
+            .img-video-container span {
+                font-size: 20px;
+                margin-right: 8px;
+                position: relative;
+                top: 2px;
+            }
+
+            .llevar {
+                padding-right: 24px;
+            }
+
+            .llevar .border-line {
+                border-color: var(--primary-color2);
+            }
+
+            .llevar,
+            .tiempo {
+                display: flex;
+                flex-basis: 50%;
+                flex-wrap: wrap;
+            }
+
+            .llevar img,
+            .tiempo img {
+                flex-basis: 30%;
+                max-width: 240px;
+                margin-right: 24px;
+            }
+
+            .llevar li {
+                list-style: disc;
+                margin-left: 2em;
+            }
+
+            .llevar .title,
+            .tiempo .title {
+                flex-basis: 70%;
+            }
+
+            .llevar .title span {
+                background-color: var(--primary-color2);
+            }
+
+            .logo-container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 100%;
+                justify-content: center;
+            }
+
+            .logo-container h1 {
+                text-align: center;
+                margin-bottom: 28px;
+                max-width: 700px;
+            }
+
+            .logo-container h1 span {
+                color: var(--primary-color1);
+            }
+
+            .logo-container p {
+                color: white;
+                font-size: 16px;
+                flex-basis: 100%;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+
+            .offers {
+                width: 100%;
+            }
+
+            .tiempo {
+                padding-left: 24px;
+            }
+
+            .tiempo i {
+                font-size: 14px;
+            }
+
+            .tiempo .border-line {
+                border-color: var(--primary-color1);
+            }
+
+            .tiempo .title span {
+                background-color: var(--primary-color1);
+            }
+
+            .title {
+                font-size: 32px;
+                font-weight: bold;
+                line-height: 34px;
+            }
+
+            .title-pag {
+                font-size: 56px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 16px;
+            }
+
+            .txt-title-pag {
+                color: white;
+                font-size: 26px;
+                margin-bottom: 32px;
+            }
+
+            .txt-title-pag span {
+                font-weight: bold;
+            }
+
+            .title span {
+                display: block;
+                width: 110px;
+                height: 8px;
+                margin-top: 12px;
+            }
+
+            .title-container {
+                flex-basis: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 24px;
+            }
+
+            .title-image {
+                display: flex;
+                flex-basis: 40%;
+            }
+
+            .title-image img {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .title-image p {
+                font-size: 36px;
+                line-height: 38px;
+                font-weight: bold;
+                color: var(--primary-color1);
+                margin-right: 4px;
+            }
+
+            .recibiendo {
+                justify-content: space-between;
+            }
+
+            .recibiendo k-card {
+                flex-basis: calc((100%/5) - 16px);
+                margin: 0;
+                display: flex;
+                text-align: center;
+                min-height: 235px;
+                min-width: 240px;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: flex-start;
+            }
+
+            .recibiendo k-card k-icon {
+                font-size: 60px;
+                --k-icon-color: var(--primary-color1);
+                margin-bottom: 8px;
+            }
+
+            .read-more {
+                color: var(--primary-color2);
+                text-align: right;
+                display: none;
+                justify-content: flex-end;
+            }
+
+            .read-more p {
+                text-decoration: underline;
+            }
+
+            .read-more p.alk-icon-abajo {
+                text-decoration: none;
+                color: var(--primary-color1);
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .scroll {
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                grid-gap: 16px;
+                overflow-x: scroll;
+                padding: 4px;
+            }
+
+            .section2 {
+                align-items: flex-start;
+                margin: 36px auto;
+            }
+
+            @media screen and (max-width:1007px) {
+                .espera-container {
+                    grid-template-columns: auto;
+                }
+
+                .espera-container k-card:nth-child(2) k-icon,
+                .espera-container k-card:nth-child(3) k-icon {
+                    margin-bottom: 12px !important;
+                }
+
+                .title {
+                    font-size: 24px;
+                    line-height: 26px;
+                }
+
+                .llevar,
+                .tiempo {
+                    padding: 0 !important;
+                    flex-basis: 100%;
+                }
+            }
+
+            @media screen and (max-width:767px) {
+                .bg-gray k-grid {
+                    margin: 24px auto 0;
+                    padding: 0;
+                }
+
+                .container-flex {
+                    padding: 0 16px;
+                }
+
+                .espera-container k-card {
+                    flex-wrap: wrap;
+                }
+
+                .espera-container k-card:nth-child(2),
+                .espera-container k-card:nth-child(3) {
+                    flex-wrap: wrap;
+                    grid-column: span 2;
+                }
+
+                .gif-media img {
+                    max-width: 320px;
+                    margin: 0 auto;
+                }
+
+                .gif-media iframe {
+                    height: 340px;
+                }
+
+                .llevar img,
+                .tiempo img {
+                    max-width: 140px;
+                }
+
+                .tiempo .title {
+                    color: var(--primary-color2);
+                }
+
+                .llevar .title {
+                    color: var(--primary-color1);
+                }
+
+                .read-more {
+                    display: flex;
+                }
+
+                .title {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+
+                .title-image {
+                    flex-basis: 100%;
+                    justify-content: center;
+                }
+
+                .title-image p {
+                    font-size: 24px;
+                    margin-right: 0;
+                }
+            }
+
+            @media screen and (max-width:520px) {
+
+                .gif-media iframe {
+                    height: 200px;
+                }
+
+                .gif-media p {
+                    color: var(--primary-color2);
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+
+
+            /*------------------------- Estilos Juan -----------------------------------------------------------------*/
+
+            .alk-icon-garantia {
+                font-size: 45px;
+
+            }
+
+            .align-center {
+
+                align-items: center;
+                display: grid;
+                display: flex;
+            }
+
+            .align-center p {
+                margin: 0;
+            }
+
+            .badge-primary {
+                background-color: var(--secondary-color2);
+                padding: 5px 8px;
+            }
+
+            .b-right {
+                border-right: 1px solid #80808030;
+            }
+
+            .card {
+                -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                margin: 1em 0em;
+                border-radius: 4px;
+            }
+            .cont-camion img {
+                width: 70%;
+            }
+            .card-header {
+                padding: 16px;
+                background-color: #F5F5F5;
+                border-radius: 4px 4px 0px 0px;
+            }
+
+            .card-body {
+                padding: 16px;
+            }
+
+            .CTA_modal .col-md-6 {
+                padding: 4px 0px;
+            }
+
+
+            .cont-horario {
+                display: flex;
+                align-items: center;
+            }
+
+            .cnt-icon i {
+                font-size: 16px;
+                color: var(--primary-color2);
+                margin-right: 12px;
+            }
+
+            .icon-borrar {
+                font-size: 24px;
+
+            }
+
+            .icon-search {
+                font-size: 24px;
+            }
+
+            .input-srch-btn {
+                box-shadow: rgb(0 0 0 / 10%) 0px 2px 3px 2px;
+                will-change: box-shadow;
+                border-radius: 8px;
+            }
+
+            .label-float {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                position: relative;
+                top: 13px;
+                left: 8px;
+                color: #444;
+                background-color: #fff;
+                padding: 0px 4px;
+            }
+
+            .modal-content {
+                height: auto;
+                min-height: 100%;
+            }
+
+            .m-0 {
+                margin: 0;
+            }
+
+            .panel-heading {
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+            }
+
+            .panel-default>.panel-heading {
+                background-color: white;
+                padding: 16px;
+                border-top: 0 !important;
+                border-bottom: 0 !important;
+                border-radius: 8px;
+            }
+
+            .panel-heading p {
+                margin: 0;
+            }
+
+            .txt-no-results {
+                padding-top: 2rem;
+            }
+
+            .txt-no-results h4 {
+                color: var(--primary-color2);
+            }
+
+            .cont-no-results {
+                text-align: -webkit-center;
+                text-align-last: center;
+                padding: 5rem;
+            }
+
+            .subtitle-card {
+                color: #707070;
+            }
+
+            .cont-input {
+                position: relative;
+            }
+
+            #cont-input {
+                cursor: pointer;
+            }
+
+            @media(max-width: 991px) {
+                .btn-desktop {
+                    display: none;
+                }
+
+                .cont-camion {
+                    margin-bottom: 32px;
+                }
+
+                .bg-banner {
+                    height: 700px;
+                }
+
+                .cont-info-banner {
+                    text-align: center;
+                    text-align: -webkit-center;
+                    text-align-last: center;
+                    padding: 0 40px;
+                }
+
+                .input-srch-btn {
+                    position: absolute;
+                    top: -3em;
+                    left: 1em;
+                    width: 90%;
+                }
+
+                #listaCoincidencias {
+                    max-height: 65vh;
+                }
+            }
+
+            @media(max-width:767px) {
+
+                .txt-title-pag{
+                    font-size: 20px;
+                }
+                .title-pag{
+                    font-size: 40px;
+                }
+                .txt-md-center {
+                    text-align: center;
+                    text-align: -webkit-center;
+                    text-align-last: center;
+                }
+
+                .modal-dialog {
+                    height: 100%;
+                    margin: 0;
+                }
+
+                .modal-content {
+                    border-radius: 0;
+                }
+
+                #listaCoincidencias {
+                    max-height: 65vh;
+                }
+
+                #cont-input {
+                    position: absolute;
+                    display: block;
+                    top: 34px;
+                    left: calc(93% - 12px);
+                }
+            }
+
+
+
+            @media(min-width:345px) {
+                span.badge.bg-primary {
+                    float: right;
+                }
+            }
+
+            @media(min-width:389px) {
+                #cont-input {
+                    position: absolute;
+                    display: block;
+                    top: 34px;
+                    left: calc(93% - 10px);
+                }
+            }
+
+            @media(min-width:768px) {
+                .fade {
+                    padding-right: 0px;
+                }
+
+                .modal-content {
+                    right: 0px;
+                    width: 768px;
+                    position: absolute;
+                    border-radius: 0;
+                }
+
+                .modal-dialog {
+                    height: 100%;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                div#modalEnvio {
+                    padding-right: 0 !important;
+                    animation-name: desvanecer;
+                    animation-duration: .5s;
+                }
+
+                #cont-input {
+                    position: absolute;
+                    display: block;
+                    top: 33px;
+                    left: calc(96% - 10px);
+                }
+            }
+
+            @media(min-width:992px) {
+                .btn-mobile {
+                    display: none;
+                }
+
+                .d-md-flex {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .cont-info-banner {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+
+                .bg-banner {
+                    background-image: url(./img/banner_envio_gratis_alkosto_desktop.jpg);
+                    background-size: cover;
+                    height: 400px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .cont-camion {
+                    text-align: right;
+                    text-align: -webkit-right;
+                    text-align-last: right;
+                }
+
+                .input-srch-btn {
+                    width: 54rem;
+                    position: absolute;
+                    top: calc(-40px - 40%);
+                    left: calc(50% - 270px);
+                    cursor: pointer;
+                }
+
+                #listaCoincidencias {
+                    max-height: 50rem;
+                }
+
+                #cont-input {
+                    position: absolute;
+                    display: block;
+                    top: 34px;
+                    left: calc(95% - 10px);
+                }
+            }
+
+            @media(min-width:1024px) {
+                #listaCoincidencias {
+                    max-height: 70vh;
+                }
+            }
+
+            @media(min-width:1440px) {
+                #listaCoincidencias {
+                    max-height: 70vh;
+                }
+            }
+
+            @media(min-width:1441px) {
+                #listaCoincidencias {
+                    max-height: 70vh;
+                }
+            }
+
+            input#search:focus {
+                border: var(--primary-color2) solid 1px;
+                transition: .3s;
+                outline: none;
+            }
+
+
+            #listaCoincidencias .panel {
+                margin-bottom: 0;
+                box-shadow: none;
+                border-bottom: 0px;
+                border-radius: 8px;
+                border: 1px solid #e0e0e0;
+                margin: 8px 4px;
+            }
+
+            #listaCoincidencias .dropdown-show {
+                -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            .fade {
+                opacity: 1;
+                background-color: rgba(0, 0, 0, 0.544);
+
+            }
+
+            @keyframes subir {
+                from {
+                    transform: translateY(100%);
+                }
+
+                to {
+                    transform: translateY(0%);
+                }
+            }
+
+            @keyframes bajar {
+                from {
+                    transform: translateY(0%);
+                }
+
+                to {
+                    transform: translateY(100%);
+                }
+            }
+
+            @keyframes desvanecer {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .moveUp {
+                animation-name: subir;
+                animation-duration: .5s;
+            }
+
+            .moveDown {
+                animation-name: bajar;
+                animation-duration: .5s;
+            }
+
+            .modal.fade .modal-dialog {
+                transform: translate(0, 0%);
+                max-width: none;
+            }
+
+            .modal-dialog .modal-content .modal-header {
+                padding: 16px 24px;
+
+            }
+
+            .modal-header .close {
+                opacity: 1;
+                color: var(--secondary-color2);
+            }
+
+            .title-modal {
+                display: flex;
+                align-items: center;
+                margin: 0;
+            }
+
+            h1.title-search.text-center {
+                font-size: 24px;
+                color: var(--secondary-color2);
+            }
+
+            h1.title-search.text-center span {
+                color: var(--primary-color1);
+            }
+
+            h2.card-subtitle {
+                color: var(--primary-color1) !important;
+                display: flex;
+                place-items: center;
+                font-size: 18px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                justify-content: space-between;
+            }
+
+            i.alk-icon-nuestras-tiendas {
+                color: var(--primary-color1);
+            }
+
+            .title-modal i {
+                padding-right: 16px;
+                font-size: x-large;
+                color: var(--primary-color1);
+                margin-right: 16px;
+            }
+
+            i.alk-icon-pin-generico {
+                font-size: 18px;
+                color: var(--alert-background-color-success);
+                margin-right: 12px;
+            }
+
+            input#input-ext {
+                background-color: transparent;
+            }
+
+
+
+            .panel-heading:hover {
+                background-color: #f5f5f5 !important;
+                transition: 0.2s;
+            }
+
+            #listaCoincidencias {
+                overflow-y: auto;
+                margin-top: 12px;
+                border-radius: 4px;
+            }
+
+            .selectOp {
+                cursor: pointer;
+            }
+
+            span.badge.bg-primary {
+                color: var(--secondary-color2);
+                background-color: white;
+                padding: 5px 14px;
+                font-size: 13px;
+            }
+
+            .txt-center {
+                text-align: center;
+                text-align: -webkit-center;
+                text-align-last: center;
+            }
+
+            .txt-depto {
+                color: var(--text-color1);
+            }
+
+            .txt-blue {
+                color: var(--secondary-color2);
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .txt-red {
+                color: #DD171B;
+                font-style: italic;
+            }
+        </style>
+        <div class="offers">
+            <section id="cont-principal">
+                <div class="container-fluid bg-banner" style="padding: 0;">
+                    <div class="container">
+                        <div class="row cont-info-banner">
+                            <div class="col-md-6">
+                                <h1 class="title-pag">Envío Gratis</h1>
+                                <p class="txt-title-pag">
+                                    Por todas tus compras en Colombia a<br> más de <span>900 municipios</span>
+                                </p>
+                                <div type="button" class="btn-modal btn-desktop button-primary" id="btn-modal"
+                                    data-toggle="modal" data-target="#modalEnvio">
+                                    Consulta cobertura y tiempos de entrega <i class="alk-icon-derecha"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6 cont-camion">
+                                <img src="./img/alk_camion.png" class="img img-responsive" alt="">
+                            </div>
+                            <div type="button" class="btn-modal btn-mobile button-primary" id="btn-modal"
+                                data-toggle="modal" data-target="#modalEnvio">
+                                Consulta cobertura y tiempos<i class="alk-icon-derecha"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-12">
+
+                                <!-- <p class="btn button-primary">Verifica si tu municipio cuenta con cobertura:</p> -->
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalEnvio" tabindex="-1" role="dialog"
+                                    aria-labelledby="modalEnvio" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <button type="button" class="close" id="close-modal"
+                                                    data-dismiss="modal" aria-label="Close">
+                                                    <i aria-hidden="true" class="alk-icon-close"></i>
+                                                </button>
+
+                                                <h4 class="title-modal"><i class="alk-icon-truck"></i> Envío gratis</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-md-offset-2">
+                                                        <h1 class="title-search text-center">
+                                                            Conoce los tiempos de entrega a tu destino con <span
+                                                                class="txt-orange">Envío Gratis</span>
+                                                        </h1>
+                                                        <div class="cont-input">
+                                                            <label for="search" class="label-float">Busca tu
+                                                                destino</label>
+                                                            <input autocomplete="off" style="width: 100%;"
+                                                                class="input-search form-control" type="text"
+                                                                name="search" id="search"
+                                                                placeholder="Ingresa el nombre de tu municipio o departamento">
+                                                            <span id="cont-input">
+                                                                <i class="alk-icon-search-mobile icon-search"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="dropdown-show" id="listaCoincidencias"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8 col-md-offset-2" id="result-search">
+                                                    </div>
+                                                    <div class="col-md-8 col-md-offset-2" id="content">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="bg-gray">
+            <div class="container-flex">
+                <k-title-underline type="center" loaded="">
+                    <h3>Agendando mi compra</h3>
+                </k-title-underline>
+                <k-grid desktop-columns="2" mobile-columns="1" width="1204">
+                    <div class="agendando-card">
+                        <k-icon icon="alk-icon-pedido-tramitado" loaded=""></k-icon>
+                        <p>Al agendar tu entrega recuerda incluir todos los datos que necesitemos para poderte entregar
+                            tu producto en tu domicilio, <b>dirección completa con nomenclatura y los demás datos </b>
+                            Ejemplo: bloque, manzana, torre apartamiento nombre del edificio.</p>
+                    </div>
+                    <div class="agendando-card">
+                        <k-icon icon="alk-icon-fecha" loaded=""></k-icon>
+                        <p>Debes estar atento el día de la entrega <b>ya que nuestros transportadores no realizan
+                                comunicaciones previas.</b></p>
+                    </div>
+                    <div class="agendando-card">
+                        <k-icon icon="alk-icon-whatsapp" loaded=""></k-icon>
+                        <p>Te estaremos notificando los avances de tu entrega mediante <b>Whatsapp o correo electrónico,
+                                valida que tu número de contacto y correo estén actualizados.</b> Puedes hacer
+                            seguimiento a tu entrega en el siguiente enlace: <b><a href="/sigue-tu-pedido"
+                                    title="Sigue tu pedido">(Sigue tu pedido)</a></b></p>
+                    </div>
+                    <div class="agendando-card">
+                        <k-icon icon="alk-icon-factura" loaded=""></k-icon>
+                        <p>En tu factura podrás encontrar los datos que registramos para la entrega de tu producto por
+                            favor valídalos y si es necesario, actualizarlos en nuestras líneas de atención
+                            <b>6014073033 o 018000111448.</b>
+                        </p>
+                    </div>
+                </k-grid>
+            </div>
+        </div>
+        <div class="container-flex esperando">
+            <k-title-underline type="center" loaded="">
+                <h3>Esperando mi compra</h3>
+            </k-title-underline>
+            <div class="espera-container">
+                <k-card class="gif-media" loaded="" shadow="" variant="outline">
+                    <iframe allowfullscreen frameborder="0" height="100%"
+                        src="//static.demoup.com/video/1433/geNTRo2PT2aQ3RudJo4vFJqp5ZMik0" width="100%"> </iframe>
+                </k-card>
+                <k-card loaded="" shadow="" variant="outline">
+                    <k-icon icon="alk-icon-help2" loaded=""></k-icon>
+                    <p>Si no es posible dejar tu producto en tu domicilio por los espacios, realizaremos la devolución
+                        del producto, nuestros transportadores <b>no están autorizados</b> a maniobrar en espacios
+                        estrechos, ascenso con poleas o por fachadas.</p>
+                </k-card>
+                <k-card loaded="" shadow="" variant="outline">
+                    <k-icon icon="alk-icon-reparacion" loaded=""></k-icon>
+                    <p>En caso de necesitar desmontar las puertas de tu producto para que ingrese a tu domicilio,
+                        nuestros transportadores te ayudarán a realizarlo. Esto tendrá un costo adicional que deberás
+                        <b> pagar al transportador en efectivo.</b>
+                    </p>
+                </k-card>
+            </div>
+        </div>
+        <div class="bg-gray">
+            <div class="container-flex recibiendo">
+                <k-title-underline type="center" loaded="">
+                    <h3>Recibiendo mi compra</h3>
+                </k-title-underline>
+                <div class="scroll">
+                    <k-card loaded="" shadow="" variant="outline">
+                        <k-icon icon="alk-icon-pedido-tramitado" loaded=""></k-icon>
+                        <p>Recuerda <b>revisar tu producto antes de firmar</b> la nota de entrega (física o digital)</p>
+                    </k-card>
+                    <k-card loaded="" shadow="" variant="outline">
+                        <k-icon icon="alk-icon-fecha" loaded=""></k-icon>
+                        <p><b>Nuestros transportadores solo realizan la entrega de tu producto</b> y no están
+                            autorizados a realizar instalaciones o venta de accesorios.</p>
+                    </k-card>
+                    <k-card loaded="" shadow="" variant="outline">
+                        <k-icon icon="alk-icon-whatsapp" loaded=""></k-icon>
+                        <p>Si tu producto presenta algún defecto o novedad, no lo recibas, devuélvelo y comunícate a
+                            nuestras líneas <b>6014073033 o 018000111448</b> </p>
+                    </k-card>
+                    <k-card loaded="" shadow="" variant="outline">
+                        <k-icon icon="alk-icon-factura" loaded=""></k-icon>
+                        <p>Asegúrate que una persona <b>mayor de edad</b> esté presente para recibir y revisar tu compra
+                        </p>
+                    </k-card>
+                    <k-card loaded="" shadow="" variant="outline">
+                        <k-icon icon="alk-icon-user" loaded=""></k-icon>
+                        <p>Ninguna persona esta autorizada a retirar tu producto después de ser entregado. <b>No
+                                entregues tu producto a nadie</b></p>
+                    </k-card>
+                    <k-card loaded="" shadow="" variant="outline">
+                        <k-icon icon="alk-icon-domicilio" loaded=""></k-icon>
+                        <p>En caso de que tu domicilio no cuente con ascensor, nuestros transportadores te ayudarán a
+                            subir tu producto <b>hasta el quinto piso.</b></p>
+                    </k-card>
+                    <k-card loaded="" shadow="" variant="outline">
+                        <k-icon icon="alk-icon-producto-entregado" loaded=""></k-icon>
+                        <p>Si tu compra incluye más de un producto es posible que los recibas <b>en diferentes paquetes
+                                incluso en diferentes momentos.</b></p>
+                    </k-card>
+                    <k-card loaded="" shadow="" variant="outline">
+                        <k-icon icon="alk-icon-pedido-entregado" loaded=""></k-icon>
+                        <p><b>Si tu domicilio cuenta con portería y el producto se ajusta,</b> el transportador podrá
+                            realizar la entrega allí. Te notificaremos cuando realicemos la entrega en este lugar.</p>
+                    </k-card>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="./js/js-envio-gratis copy.js"></script>
+    <!-- <script src="/medias/js-envio-gratis.js?context=bWFzdGVyfGpzLWFsa29zdG8taG9tZXw1NjY5fGFwcGxpY2F0aW9uL3gtamF2YXNjcmlwdHxoNGUvaDhjLzEzNTIzOTIzMjcxNzEwL2pzLWVudmlvLWdyYXRpcy5qc3wxNzhlMDc5MWJmNWMzY2UwMmQ0NWMzMDgwNDFhZjljZDEwYWJhM2Y5NGFkOThhNmQ3OTAyMTllMDNhMzcwZjFm"></script> -->
+</body>
+
+</html>
